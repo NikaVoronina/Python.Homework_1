@@ -11,6 +11,8 @@ a = int(input('Введите a: '))
 b = int(input('Введите b: '))
 if a * a == b:
     print('Да')
+elif b * b == a:
+    print('Да')
 else:
     print('Нет')
 
