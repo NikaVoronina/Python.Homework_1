@@ -4,8 +4,15 @@
 
 from random import randint
 
+with open('Task_4.txt', 'w') as data:
+    data.write('0\n')
+    data.write('1\n')
+    data.write('5\n')
+    data.write('8\n')
+    data.write('10\n') 
+
 def get_numbers(n):
-    return [randint(-n/2, n) for i in range(-n, n + 1)]
+    return [randint(-n / 2, n) for i in range(-n, n + 1)]
 
 def get_data_from_file(path):
     data = open(path, 'r')
@@ -19,7 +26,7 @@ def get_mult(numbers, datalist):
         mult *= numbers[i]
     return mult
 
-path = '17_Mult_task.txt'
+path = 'Task_4.txt'
 n = 10 
 datalist = get_data_from_file(path)
 numbers = get_numbers(n)
