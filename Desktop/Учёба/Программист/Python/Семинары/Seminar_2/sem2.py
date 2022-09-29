@@ -59,9 +59,10 @@
 
 
 
-str = input('Введите строку: ')
-price = len(str) * 60
-print(f'Строка стоит: {price // 100}р. {price % 100}коп.')
+# str = input('Введите строку: ')
+# price = len(str) * 60
+# print(f'Строка стоит: {price // 100}р. {price % 100}коп.')
+
 
 
 # Количество слов
@@ -87,3 +88,8 @@ print(f'Строка стоит: {price // 100}р. {price % 100}коп.')
 # Timur forever young
 # Sample Output 2:
 # 3
+
+
+a = input('Введите предложение:')
+c = a.split()
+print(len(c))
